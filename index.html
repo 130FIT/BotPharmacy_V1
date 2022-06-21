@@ -80,7 +80,7 @@
     document.getElementById("version").append(liff.getVersion())
     document.getElementById("accessToken").append(liff.getAccessToken())
     document.getElementById("isInClient").append(liff.getisInClient())
-    if(liff.isInClient()){
+    if(liff.isinclient()){
         document.getElementById("btnLogOut").style.display = "none"
     }
     else{
@@ -93,7 +93,6 @@
 
 
     async function main() {
-      alert("Bot_Pharmacy ยินดีต้อนรับ")
       await liff.init({ liffId: "1657145127-vd3OlajL" })
       getEnvironment()
       // getUserProfile()
