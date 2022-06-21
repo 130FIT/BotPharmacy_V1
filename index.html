@@ -80,7 +80,7 @@
     document.getElementById("version").append(liff.getVersion())
     document.getElementById("accessToken").append(liff.getAccessToken())
     document.getElementById("isInClient").append(liff.getisInClient())
-    if(liff.isinclient()){
+    if(liff.isInClient(true)){
         document.getElementById("btnLogOut").style.display = "none"
     }
     else{
