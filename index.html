@@ -117,6 +117,9 @@
 
     if(liff.isInClient()){
         document.getElementById("btnLogOut").style.display = "none"
+        if (liff.getOS() === 'ios') {
+        btnScanCode.style.display = 'none';
+  }
     }
     else{
         document.getElementById("btnMsg").style.display = "none"
