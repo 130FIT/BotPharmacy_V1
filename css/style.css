@@ -6,7 +6,16 @@ button {
 }
 
 p {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #222;
+  overflow: hidden ;
   border-bottom: 1px dashed #ddd
+  
 }
 
 #pictureUrl {
@@ -32,9 +41,6 @@ p {
   overflow: auto
 }
 body{
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   background-color: #2f363e;
 
 }
