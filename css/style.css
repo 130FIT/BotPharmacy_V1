@@ -6,14 +6,6 @@ button {
 }
 
 p {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #222;
-  overflow: hidden ;
   border-bottom: 1px dashed #ddd
   
 }
@@ -41,6 +33,5 @@ p {
   overflow: auto
 }
 body{
-  background-color: #2f363e;
-
+  background-color: #ddd;
 }
