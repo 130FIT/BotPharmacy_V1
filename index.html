@@ -36,7 +36,6 @@
   <button id="btnClose" onclick="closed()">Close</button>
 
   <script src="js/vconsole.min.js"></script>
-  
   <script>
     var vConsole = new VConsole()
     console.log("Hello World!")
@@ -149,7 +148,6 @@
           getContext()
           getFriendship()
           createUniversalLink()
-          StatusUser()
         } else {
           liff.login()
         }
@@ -158,110 +156,5 @@
     }
     main()
   </script>
-  <script src="js/status.js"></script>
-     <br>
-     <div class="container">
-    
-     <div class="row">
-     <div class="col">
-     <!-- 1 of 3 -->
-     </div>
-     
-     </div>
-        
-     <div class="col">
-     </div>
-     </div>
-     </div>
-     
-     <div class="container">
-     <div class="row">
-     <div class="col-md">
-     </div>
-     <div class="col-md">
-     
-     <br>
-       
-     </div>
-     <div class="col-md">
-     </div>
-     </div>
-     </div>
-     
-     <div class="container">
-     <div class="row">
-     <div class="col">
-     </div>
-     <div class="col-5">
-     <center><span class="badge badge-primary">ผลการค้นหาข้อมูล</span></center>
-     </div>
-     <!-- Result Header End -->
-     
-     <br>
-     
-     <div class="col">
-     </div>
-     </div>
-     
-    
-     <div class="row">
-     <div class="col">
-     </div>
-     <div class="col-md-auto">
-     
-     <br>
-     
-     <div class="container">
-     <div id="search">
-     <textarea style="border:none;resize:none;" id="search" readonly></textarea>
-     </div>
-     </div>
-     
-     </div>
-     <div class="col">
-        </div>
-     </div>
-     </div>
-     
-    </div>
-    <!-- Footer -->
-    <div class="container">
-            <footer><br>
-                <div class="bg-primary">
-                    <div class="container">
-                        <br>
-                        <div class="row">
-                            <div class="clo-lg-3 col-md-auto">
-                                <h6 class="prompt text-white"><i class="fa fa-user-circle-o mr-3"></i>นายอภิวัฒน์ วงศ์กัณหา  โรงเรียนอภิวัฒน์สอนสร้างสื่อวิทยาคม</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            </div>
-            <!-- ปิดแทก Footer -->
-    <script>
-      document.getElementById("idStudent").append(profile.userId)
-      
-     function findCode() {
-     var code = document.getElementById("idStudent").value;
-    
-     if(code.length === 13){
-        google.script.run.withSuccessHandler(updateData).getCode(code);
-    
-     }
-    }
-    
-    function updateData(data) {
-            document.getElementById("search").innerHTML = data;
-            M.updateTexfields();
-    }
-    
-    </script>
-     
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-     
 </body>
 </html>
